@@ -7,7 +7,7 @@ package com.seris.api.util;
  */
 public class Constants {
     public static String[] httpSecurityUrlAntMatchers = new String[]{
-            "/api/auth/**"
+            "/auth/**"
     };
 
     /*

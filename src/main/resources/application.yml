@@ -1,5 +1,7 @@
 server:
   port: 9001
+  servlet:
+    context-path: /api
 spring:
   datasource:
     url: jdbc:mariadb://localhost:3306/dummy_db
