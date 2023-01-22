@@ -1,6 +1,6 @@
-package com.seris.api.services.security.service;
+package com.seris.api.components.security.service;
 
-import com.seris.api.services.security.model.Token;
+import com.seris.api.components.security.model.Token;
 import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;

@@ -1,7 +1,7 @@
-package com.seris.api.services.security.service;
+package com.seris.api.components.security.service;
 
 import com.seris.api.entities.user.User;
-import com.seris.api.services.security.model.RegisterDto;
+import com.seris.api.components.security.model.RegisterDto;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;

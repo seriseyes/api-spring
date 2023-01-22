@@ -1,6 +1,6 @@
-package com.seris.api.services.security.config;
+package com.seris.api.components.security.config;
 
-import com.seris.api.services.security.service.JwtService;
+import com.seris.api.components.security.service.JwtService;
 import jakarta.servlet.FilterChain;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;

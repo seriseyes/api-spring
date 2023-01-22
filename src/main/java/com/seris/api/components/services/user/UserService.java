@@ -1,8 +1,8 @@
-package com.seris.api.services.services.user;
+package com.seris.api.components.services.user;
 
 import com.seris.api.entities.user.User;
 import com.seris.api.model.Response;
-import com.seris.api.services.services.user.repository.UserRepository;
+import com.seris.api.components.services.user.repository.UserRepository;
 import com.seris.api.util.Validator;
 import org.springframework.stereotype.Service;
 

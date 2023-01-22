@@ -1,4 +1,4 @@
-package com.seris.api.services.security.config;
+package com.seris.api.components.security.config;
 
 import com.seris.api.util.Constants;
 import lombok.RequiredArgsConstructor;

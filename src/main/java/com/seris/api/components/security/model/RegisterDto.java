@@ -1,4 +1,4 @@
-package com.seris.api.services.security.model;
+package com.seris.api.components.security.model;
 
 import lombok.Data;
 

@@ -1,4 +1,4 @@
-package com.seris.api.services.services.user;
+package com.seris.api.components.services.user;
 
 import com.seris.api.entities.user.User;
 import com.seris.api.model.Response;

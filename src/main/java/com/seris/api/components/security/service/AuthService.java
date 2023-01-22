@@ -1,13 +1,13 @@
-package com.seris.api.services.security.service;
+package com.seris.api.components.security.service;
 
 import com.seris.api.entities.user.User;
 import com.seris.api.enums.Role;
 import com.seris.api.enums.Status;
 import com.seris.api.model.Response;
 import com.seris.api.model.Validation;
-import com.seris.api.services.security.model.RegisterDto;
-import com.seris.api.services.security.model.Token;
-import com.seris.api.services.services.user.repository.UserRepository;
+import com.seris.api.components.security.model.RegisterDto;
+import com.seris.api.components.security.model.Token;
+import com.seris.api.components.services.user.repository.UserRepository;
 import com.seris.api.util.Validator;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;

@@ -1,6 +1,6 @@
-package com.seris.api.services.security.config;
+package com.seris.api.components.security.config;
 
-import com.seris.api.services.services.user.repository.UserRepository;
+import com.seris.api.components.services.user.repository.UserRepository;
 import lombok.AllArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

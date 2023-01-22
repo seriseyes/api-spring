@@ -1,4 +1,4 @@
-package com.seris.api.services;
+package com.seris.api.components;
 
 import com.seris.api.entities.BaseEntity;
 import org.springframework.data.jpa.repository.JpaRepository;

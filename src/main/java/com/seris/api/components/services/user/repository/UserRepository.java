@@ -1,7 +1,7 @@
-package com.seris.api.services.services.user.repository;
+package com.seris.api.components.services.user.repository;
 
 import com.seris.api.entities.user.User;
-import com.seris.api.services.BaseRepository;
+import com.seris.api.components.BaseRepository;
 import org.springframework.stereotype.Repository;
 
 import java.util.Optional;
