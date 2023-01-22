@@ -1,13 +1,13 @@
 package com.seris.api.components.security.service;
 
+import com.seris.api.components.security.model.RegisterDto;
+import com.seris.api.components.security.model.Token;
+import com.seris.api.components.services.user.repository.UserRepository;
 import com.seris.api.entities.user.User;
 import com.seris.api.enums.Role;
 import com.seris.api.enums.Status;
 import com.seris.api.model.Response;
 import com.seris.api.model.Validation;
-import com.seris.api.components.security.model.RegisterDto;
-import com.seris.api.components.security.model.Token;
-import com.seris.api.components.services.user.repository.UserRepository;
 import com.seris.api.util.Validator;
 import org.springframework.security.authentication.AuthenticationManager;
 import org.springframework.security.authentication.UsernamePasswordAuthenticationToken;
@@ -29,15 +29,12 @@ public record AuthService(
         Validation<User> validation = validator.validateEntity(model);
         if (validation.isError()) return validation.toResponse();
 
-        if (userRepository.existsByUsername(model.getUsername())) {
+        if (userRepository.existsByUsername(model.getUsername()))
             return Response.error(model.getUsername() + " давхардаж байна. Өөр нэвтрэх нэр оруулна уу");
-        }
 
         if (model.getRoles() == null) model.setRoles(List.of(Role.USER));
         if (model.getStatus() == null) model.setStatus(Status.ACTIVE);
-        if (model.getId() == null) {
-            model.setPassword(passwordEncoder.encode(model.getPassword()));
-        }
+        model.setPassword(passwordEncoder.encode(model.getPassword()));
         return Response.success(userRepository.save(model));
     }
 

@@ -1,0 +1,9 @@
+<service>
+    <id>Seris API</id>
+    <name>Seris API</name>
+    <description>Seris API</description>
+    <env name="MYAPP_HOME" value="%BASE%"/>
+    <executable>C:\Program Files\Java\jdk-17.0.5\bin\java.exe</executable>
+    <arguments>-Xmx8g -jar "%BASE%\api.jar"</arguments>
+    <logmode>rotate</logmode>
+</service>
