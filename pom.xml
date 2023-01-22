@@ -12,7 +12,7 @@
     <artifactId>api</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>api-spring</name>
-    <description>Spring v3, Hibernate v6, Spring Security JWT, iText v5, Java v17, MariaDB, Bcrypt</description>
+    <description>Spring v3, Hibernate v6, Spring Security v6 JWT, iText v5, Java v17, MariaDB, Bcrypt</description>
     <properties>
         <java.version>17</java.version>
     </properties>
